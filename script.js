@@ -25,9 +25,12 @@ Array.prototype.forEach.call (
 
             console.log(inputHidden.files);
 
+            // Array.prototype.forEach.call(inputHidden.files, file => console.log(file));
+            // Array.from(inputHidden.files).forEach(file => { console.log(file); });
+
             // files
             const filenameList = Array.prototype.map.call(inputHidden.files, function(file) {
-                console.log(file);
+                // console.log(file);
                 return file.name;
             });
     
@@ -51,3 +54,6 @@ Array.prototype.forEach.call (
 // const btn = document.querySelectorAll('.file-upload__button');
 
 // Array.prototype.forEach.call (btn, (e) => {console.log(e)})
+
+
+
