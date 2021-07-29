@@ -20,12 +20,14 @@ Array.prototype.forEach.call (
             inputHidden.click();
         });
 
-        
+        console.log(inputHidden);
         inputHidden.addEventListener("change", function() {
+
+            console.log(inputHidden.files);
 
             // files
             const filenameList = Array.prototype.map.call(inputHidden.files, function(file) {
-                console.log(file.name);
+                console.log(file);
                 return file.name;
             });
     
