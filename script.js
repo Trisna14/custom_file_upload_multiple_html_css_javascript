@@ -28,6 +28,8 @@ Array.prototype.forEach.call (
             // Array.prototype.forEach.call(inputHidden.files, file => console.log(file));
             // Array.from(inputHidden.files).forEach(file => { console.log(file); });
 
+            // inputHidden.files is an object prototyped on FileList; just like HTMLCollection, it does not have Array.prototype in its prototype chain
+
             // files
             const filenameList = Array.prototype.map.call(inputHidden.files, function(file) {
                 // console.log(file);
