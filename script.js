@@ -51,9 +51,10 @@ Array.prototype.forEach.call (
 // console.log(document.querySelector('.file-upload__button'));
 // console.log(document.querySelectorAll('.file-upload__button'));
 
-// const btn = document.querySelectorAll('.file-upload__button');
+const btn = document.querySelectorAll('.file-upload__button');
 
-// Array.prototype.forEach.call (btn, (e) => {console.log(e)})
+console.log(btn);
+Array.prototype.forEach.call (btn, (e) => {console.log(e)})
 
 
 
